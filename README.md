@@ -27,8 +27,8 @@ This AI-powered voice assistant integrates multiple services, including speech r
 ## 🔧 Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/AyushShinde2004/Ai_assistant.git
-   cd Ai_assistant
+   git clone https://github.com/AyushShinde2004/Desktop_AI_Assistant.git
+   cd Desktop_AI_Assistant
    ```
 2. Install dependencies:
    ```bash
