@@ -1,5 +1,12 @@
 # 🤖 AI Voice Assistant
 -AI Voice Assistant is an advanced voice-controlled application that seamlessly integrates speech recognition, AI-powered responses, web automation, and media playback. Designed for efficiency and ease of use, it transforms voice commands into powerful actions.
+
+Say:
+```bash
+Slenena
+```
+to Wake up
+
 ## 🚀 Overview
 This AI-powered voice assistant integrates multiple services, including speech recognition, text-to-speech, web automation, and Spotify playback. It can:
 - Recognize voice commands 🎙️
