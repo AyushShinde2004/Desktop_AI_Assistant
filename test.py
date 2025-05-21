@@ -151,20 +151,18 @@ def get_weather():
 def say(text, voice_id="ZF6FPAbjXT4488VcRRnw"):
     global usage_tracker, current_key_index
     try:
-         #Choose between ElevenLabs and gTTS based on API availability
-        #if VOICE_KEYS[current_key_index]:
-            # ElevenLabs implementation
-        #    current_key = VOICE_KEYS[current_key_index]
-        #    headers = {"xi-api-key": current_key, "Content-Type": "application/json"}
-        #    payload = {"text": text, "voice_settings": {"stability": 0.5, "clarity": 0.5, "similarity_boost": 0.75}}
-        #    API_URL = f"https://api.elevenlabs.io/v1/text-to-speech/{voice_id}/stream"
-        #    response = requests.post(API_URL, headers=headers, json=payload, stream=True)
-        #    
-        #    if response.status_code == 200:
-        #        audio_stream = io.BytesIO(response.content)
-        #        audio_thread = threading.Thread(target=play_audio, args=(audio_stream,))
-        #        audio_thread.start()
-        #else:
+        if VOICE_KEYS[current_key_index]
+            current_key = VOICE_KEYS[current_key_index]
+            headers = {"xi-api-key": current_key, "Content-Type": "application/json"}
+            payload = {"text": text, "voice_settings": {"stability": 0.5, "clarity": 0.5, "similarity_boost": 0.75}}
+            API_URL = f"https://api.elevenlabs.io/v1/text-to-speech/{voice_id}/stream"
+            response = requests.post(API_URL, headers=headers, json=payload, stream=True)
+            
+            if response.status_code == 200:
+                audio_stream = io.BytesIO(response.content)
+                audio_thread = threading.Thread(target=play_audio, args=(audio_stream,))
+                audio_thread.start()
+        else:
             def _gtts_play():
                 tts = gTTS(text=text, lang='en', tld='co.uk', slow=False)
                 audio_stream = io.BytesIO()
