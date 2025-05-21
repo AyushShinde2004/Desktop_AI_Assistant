@@ -43,7 +43,7 @@ This AI-powered voice assistant integrates multiple services, including speech r
 ## 🎙️ Usage
 Run the assistant:
 ```bash
-python Assistant.py
+python test.py
 ```
 
 ### Example Commands:
