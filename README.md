@@ -3,7 +3,7 @@
 
 Say:
 ```bash
-Slenena
+Selena
 ```
 to Wake up
 
