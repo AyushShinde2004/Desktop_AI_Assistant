@@ -1,0 +1,17 @@
+# requirements.txt
+speechrecognition
+pywhatkit
+python-dotenv
+pygame
+requests
+pvporcupine
+gtts
+pyaudio
+numpy
+torch
+undetected-chromedriver
+selenium
+pycaw
+comtypes
+spotipy
+pydub
